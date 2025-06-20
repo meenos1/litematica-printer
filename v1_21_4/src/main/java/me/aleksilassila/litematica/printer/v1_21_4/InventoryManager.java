@@ -226,7 +226,7 @@ public class InventoryManager {
                     depositCursorStack();
                     // Switch to hotbar slot
                     if (hotbarSlot != player.getInventory().selectedSlot) {
-                        player.networkHandler.sendPacket(new UpdateSelectedSlotC2SPacket(hotbarSlot));
+                        //player.networkHandler.sendPacket(new UpdateSelectedSlotC2SPacket(hotbarSlot));
                         player.getInventory().selectedSlot = hotbarSlot;
                     }
                     updateLastUsedSlot(hotbarSlot);
