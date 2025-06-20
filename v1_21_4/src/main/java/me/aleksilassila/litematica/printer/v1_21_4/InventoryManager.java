@@ -215,7 +215,7 @@ public class InventoryManager {
                             return false;
                         }
                         if (hotbarSlot != player.getInventory().selectedSlot) {
-                            player.networkHandler.sendPacket(new UpdateSelectedSlotC2SPacket(hotbarSlot));
+                            //player.networkHandler.sendPacket(new UpdateSelectedSlotC2SPacket(hotbarSlot));
                             player.getInventory().selectedSlot = hotbarSlot;
                         }
                         updateLastUsedSlot(hotbarSlot);
